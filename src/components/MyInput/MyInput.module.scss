@@ -1,0 +1,14 @@
+.MyInput {
+  display: flex;
+}
+
+.input {
+  padding: 5px;
+  flex-grow: 1;
+  min-width: 100px;
+}
+
+.addBtn {
+  padding: 5px;
+  cursor: pointer;
+}

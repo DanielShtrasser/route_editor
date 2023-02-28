@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Route Editor</title>
+    <link href="https://yandex.st/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=3235217d-d276-4978-bf9f-619150230bc6&lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript">
+      ymaps.ready(init);
+      function init(){
+        console.log('ymaps ', ymaps)
+        var myMap = new ymaps.Map("map", {
+            center: [55.76, 37.64],
+            zoom: 7
+        });
+        var multiRoute = new ymaps.multiRouter.MultiRoute({
+        referencePoints: [
+            'Москва, метро Смоленская',
+            'Москва, метро Арбатская',
+            [55.734876, 37.59308], // улица Льва Толстого.
+          ],
+          params: {reverseGeocoding: true}
+        }, {
+          boundsAutoApply: true
+        });
+
+        customizeSecondPoint()
+
+        function customizeSecondPoint() {
+          multiRoute.model.events.once("requestsuccess", function () {
+            var yandexWayPoints = multiRoute.getWayPoints();
+            yandexWayPoints.each(p => {
+              ymaps.geoObject.addon.balloon.get(p);
+              p.options.set({
+                  balloonContentLayout: ymaps.templateLayoutFactory.createClass(
+                      '{{ properties.address|raw }}'
+                  )
+              });
+            })
+        });
+      }
+      // Добавление маршрута на карту.
+      myMap.geoObjects.add(multiRoute);
+  } -->
+
+  </script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

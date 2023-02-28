@@ -1,0 +1,16 @@
+.point {
+  display: flex;
+  margin-bottom: 5px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  cursor: grabbing;
+  
+  &__address {
+    margin: 5px;
+  }
+
+  &__delBtn {
+    margin-left: auto;
+    cursor: pointer;
+  }
+}
