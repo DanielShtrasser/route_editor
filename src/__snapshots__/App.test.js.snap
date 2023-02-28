@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App render App 1`] = `
+<DocumentFragment>
+  <div
+    class="app"
+  >
+    <div
+      class="pointsListWrapper"
+    >
+      <div />
+      <div
+        class="pointsList"
+      >
+        <div />
+      </div>
+    </div>
+    <div />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`App render MyInput 1`] = `
+<DocumentFragment>
+  <div
+    class="app"
+  >
+    <div
+      class="pointsListWrapper"
+    >
+      <div />
+      <div
+        class="pointsList"
+      >
+        <div />
+      </div>
+    </div>
+    <div />
+  </div>
+</DocumentFragment>
+`;
